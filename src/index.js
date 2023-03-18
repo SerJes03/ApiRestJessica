@@ -1,6 +1,10 @@
 const express = require('express'); // librería node js para programar aplicaciones web backend
 const mongoose = require('mongoose') // Librería para hacer consultas y conexiones  a bases de datos
 require('dotenv').config()// importa librería dotenv
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const methodOverride = require('method-override')
+
 
 // importación de rutas
 const userRoutes = require('./routes/user') // importación rutas API Rest par usuarios
@@ -19,6 +23,10 @@ app.get('/', (req,res)=>{ // prueba api
 })
 
 // midleware
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+app.use(cors())
+app.use(methodOverride())
 app.use(express.json()) // se ejecuta la librería express y le adjudicaco las rutas de cada endpoint
 app.use('/api', userRoutes)
 app.use('/api', equipoRoutes)
