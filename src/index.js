@@ -9,7 +9,7 @@ const methodOverride = require('method-override')
 // importación de rutas
 const userRoutes = require('./routes/user') // importación rutas API Rest par usuarios
 const equipoRoutes = require('./routes/equipo')// importación rutas API Rest para tipo de equipos
-const estadoeEquipoRoutes = require('./routes/estadoequipo')// importación rutas API Rest para estado equipos
+const estadoeEquipoRoutes = require('./routes/estadoEquipo')// importación rutas API Rest para estado equipos
 const marcaRoutes = require('./routes/marca')// importación rutas API Rest para Marcas
 const inventarioRoutes = require('./routes/inventario')// Importación rutas para inventario
 
