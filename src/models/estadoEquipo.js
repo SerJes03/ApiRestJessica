@@ -15,4 +15,4 @@ const estadoEquipoSchema = mongoose.Schema({
 }, { timestamps: true}) 
 
 
-module.exports = mongoose.model('estadoequipo', estadoEquipoSchema)// exportamos el esquema  estado equipo
+module.exports = mongoose.model('estadoEquipo', estadoEquipoSchema)// exportamos el esquema  estado equipo

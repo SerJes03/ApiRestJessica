@@ -39,7 +39,7 @@ const inventarioSchema = mongoose.Schema({
     },
     estado_equipo: {
         type: mongoose.Schema.Types.ObjectId,
-        ref:'estadoequipo',
+        ref:'estadoEquipo',
         requiered: true
     },
 

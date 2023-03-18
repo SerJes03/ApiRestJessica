@@ -3,7 +3,7 @@ const inventarioSchema = require('../models/inventario')
 const userSchema = require('../models/user')
 const marcaSchema = require('../models/marca')
 const equipoSchema = require('../models/equipo')
-const estadoEquipoSchema = require('../models/estadoequipo')
+const estadoEquipoSchema = require('../models/estadoEquipo')
 
 
 // crear inventario
