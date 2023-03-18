@@ -1,5 +1,5 @@
 const { request, response } = require('express');
-const estadoEquipoSchema = require('../models/estadoequipo')
+const estadoEquipoSchema = require('../models/estadoEquipo')
 
 
 // crear estado equipo
